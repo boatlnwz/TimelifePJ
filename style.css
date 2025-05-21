@@ -1,0 +1,84 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.clock {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: url('clcoktemplate.png') no-repeat center/contain;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  border-radius: 2px;
+}
+
+.hour {
+  width: 6px;
+  height: 100px;
+  background: #000000;
+  z-index: 4;
+}
+
+.minute {
+  width: 4px;
+  height: 130px;
+  background: #777777;
+  z-index: 3;
+}
+
+.second {
+  width: 2px;
+  height: 150px;
+  background: red;
+  z-index: 2;
+}
+
+.subsecond {
+  width: 1px;
+  height: 160px;
+  background: rgb(65, 0, 195);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.digital {
+  font-size: 2rem;
+  text-shadow: 0 0 5px #0f0;
+}
+.life-bar-container {
+  width: 80%;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+.life-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, rgb(167, 245, 167), rgb(162, 255, 255));
+  transition: width 0.2s ease-in-out;
+}
+.percent-text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: rgb(152, 253, 152);
+}
