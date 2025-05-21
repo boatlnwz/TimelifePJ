@@ -82,3 +82,10 @@ body {
   font-size: 1.2rem;
   color: rgb(152, 253, 152);
 }
+.section-title {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  text-align: center;
+}
