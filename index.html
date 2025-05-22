@@ -4,10 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Time Life</title>
+
+  <!-- ฟอนต์ Orbitron จาก Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="section-title">TIME LIFE PROJECT website edition</div>
+
+  <div class="section-title">
+    <div class="main-title">Time Life Project</div>
+    <div class="sub-title">website edition</div>
+  </div>
+
   <div class="clock">
     <div class="hand hour" id="hour"></div>
     <div class="hand minute" id="minute"></div>
@@ -17,11 +28,11 @@
 
   <div class="digital" id="digital"></div>
 
-<div class="life-bar-container">
-  <div class="life-bar" id="lifeBar"></div>
-</div>
+  <div class="life-bar-container">
+    <div class="life-bar" id="lifeBar"></div>
+  </div>
 
-<div id="percentText" class="percent-text"></div>
+  <div id="percentText" class="percent-text"></div>
 
   <script src="main.js"></script>
 </body>
